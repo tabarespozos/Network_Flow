@@ -1,0 +1,11 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: SyllabusFlujoEnRedes
+parts:
+- caption: Lectures
+  chapters:
+  - file: Class_1_Introduction_Motivation/1-Introduction
+  - file: Class_1_Introduction_Motivation/2-Project
+  - file: Class_1_Introduction_Motivation/3-Graphs

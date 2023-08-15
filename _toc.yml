@@ -4,8 +4,20 @@
 format: jb-book
 root: SyllabusFlujoEnRedes
 parts:
-- caption: Lectures
+- caption: Semana 1
   chapters:
   - file: Class_1_Introduction_Motivation/1-Introduction
   - file: Class_1_Introduction_Motivation/2-Project
   - file: Class_1_Introduction_Motivation/3-Graphs
+
+- caption: Semana 2
+  chapters:
+  - file: Class_2_Gurobi/1-Hello_word_diet_problem
+  - file: Class_2_Gurobi/2-Implicit_formulation
+  - file: Class_2_Gurobi/3-Exercice
+  - file: Class_2_Gurobi/4-Generalizing_Diet_Problem
+
+- caption: Semana 3
+  chapters:
+  - file: Class_3_Network_as_LP/1-Introduction
+

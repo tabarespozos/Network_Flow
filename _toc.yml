@@ -9,6 +9,7 @@ parts:
   - file: Class_1_Introduction_Motivation/1-Introduction
   - file: Class_1_Introduction_Motivation/2-Project
   - file: Class_1_Introduction_Motivation/3-Graphs
+  - file: Class_1_Introduction_Motivation/4-Euler
 
 - caption: Semana 2
   chapters:

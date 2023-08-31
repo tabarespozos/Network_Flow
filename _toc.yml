@@ -18,3 +18,5 @@ parts:
 - caption: Semana 3
   chapters:
   - file: Class_3_Network_as_LP/1-Introduction
+  - file: Class_3_Network_as_LP/2-Network_representation
+  - file: Class_3_Network_as_LP/3-Network_transformations

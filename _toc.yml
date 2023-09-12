@@ -20,3 +20,8 @@ parts:
   - file: Class_3_Network_as_LP/1-Introduction
   - file: Class_3_Network_as_LP/2-Network_representation
   - file: Class_3_Network_as_LP/3-Network_transformations
+- caption: Semana 4
+  chapters:
+  - file: Class_4_Simplex/1-Simplex_for_Network_Flow
+  #- file: Class_4_Simplex/2-Network_representation
+  #- file: Class_4_Simplex/3-Network_transformations

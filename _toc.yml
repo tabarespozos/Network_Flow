@@ -23,5 +23,5 @@ parts:
 - caption: Semana 4
   chapters:
   - file: Class_4_Simplex/1-Simplex_for_Network_Flow
-  #- file: Class_4_Simplex/2-Network_representation
-  #- file: Class_4_Simplex/3-Network_transformations
+  - file: Class_4_Simplex/2-Simplex_cicling_pivot
+  - file: Class_4_Simplex/3-Simplex_acotado

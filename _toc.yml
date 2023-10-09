@@ -25,12 +25,12 @@ parts:
   - file: Class_4_Simplex/1-Simplex_for_Network_Flow
   - file: Class_4_Simplex/2-Simplex_cicling_pivot
   - file: Class_4_Simplex/3-Simplex_acotado
-- caption: Semana 
+- caption: Semana 5
   chapters:
   - file: Class_5_Transport/1-Simplex_Transport
   - file: Class_5_Transport/2-Simplex_Transport_implementation
   - file: Class_5_Transport/3-Simplex_Transport_acotado
-- caption: Semana 
+- caption: Semana 6
   chapters:
   - file: Class_6_Assignment/1-Assignment_problem
 

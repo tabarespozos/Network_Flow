@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Lectura 2: Proyecto del semestre &#8212; Flujo en Redes 202302</title>
+    <title>Lectura 2: Proyecto del semestre &#8212; Network Flow</title>
   
   
   
@@ -61,8 +61,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Class_1_Introduction_Motivation/2-Project';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -139,7 +137,7 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   
-    <p class="title logo__title">Flujo en Redes 202302</p>
+    <p class="title logo__title">Network Flow</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -157,29 +155,6 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="1-Introduction.html"><strong>Lectura 1: Flujo en redes</strong></a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Lectura 2: Proyecto del semestre</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="3-Graphs.html"><strong>Lectura 3: Grafos</strong></a></li>
-
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Semana 2</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../Class_2_Gurobi/1-Hello_word_diet_problem.html"><strong>Lectura 1: introducción a Gurobi python</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Class_2_Gurobi/2-Implicit_formulation.html"><strong>Lectura 2: Formulación implícita</strong></a></li>
-
-
-
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="../Class_2_Gurobi/3-Exercice.html"><strong>Lectura 3: Ejercicio en clase</strong></a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="../Class_2_Gurobi/4-Generalizing_Diet_Problem.html"><strong>Lectura 4: Marco general para Formulación implícita</strong></a></li>
-
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Semana 3</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../Class_3_Network_as_LP/1-Introduction.html"><strong>Lectura 1: Flujo en redes como programas lineales</strong></a></li>
-
-
-
 
 </ul>
 
@@ -235,7 +210,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://colab.research.google.com/github/tabarespozos/Flujo_en_redes_202302/blob/Flujo_en_redes_202302/Class_1_Introduction_Motivation/2-Project.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/tabarespozos/Network_Flow/blob/Network_Flow/Class_1_Introduction_Motivation/2-Project.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -266,7 +241,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tabarespozos/Flujo_en_redes_202302" target="_blank"
+      <li><a href="https://github.com/tabarespozos/Network_Flow" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -283,7 +258,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/tabarespozos/Flujo_en_redes_202302/issues/new?title=Issue%20on%20page%20%2FClass_1_Introduction_Motivation/2-Project.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/tabarespozos/Network_Flow/issues/new?title=Issue%20on%20page%20%2FClass_1_Introduction_Motivation/2-Project.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -405,14 +380,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resolver-el-problema-de-reconfiguracion-de-redes-de-distribucion-de-energia-electrica-rsd"><strong>Resolver el problema de reconfiguración de redes de distribución de energia eléctrica (RSD)</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion"><strong>Introducción</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-matematico-general"><strong>Modelo matemático General</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-matematico-inicial"><strong>Modelo Matemático inicial</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restriccion-de-radialidad"><strong>Restricción de radialidad</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalizacion-de-la-restriccion-de-radialidad"><strong>Generalización de la restricción de radialidad</strong></a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optimizacion-de-la-integracion-de-programacion-y-horarios-de-autobuses-utilizando-modelos-de-flujo-de-redes">Optimización de la Integración de Programación y Horarios de Autobuses Utilizando Modelos de Flujo de Redes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones-objetivo">Funciones Objetivo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posibles-restricciones">Posibles Restricciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resultados-esperados">Resultados Esperados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliografia-minima-sugerida">Bibliografía mínima sugerida</a></li>
 </ul>
             </nav>
         </div>
@@ -426,165 +398,48 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="lectura-2-proyecto-del-semestre">
 <h1><strong>Lectura 2: Proyecto del semestre</strong><a class="headerlink" href="#lectura-2-proyecto-del-semestre" title="Permalink to this heading">#</a></h1>
-<section id="resolver-el-problema-de-reconfiguracion-de-redes-de-distribucion-de-energia-electrica-rsd">
-<h2><strong>Resolver el problema de reconfiguración de redes de distribución de energia eléctrica (RSD)</strong><a class="headerlink" href="#resolver-el-problema-de-reconfiguracion-de-redes-de-distribucion-de-energia-electrica-rsd" title="Permalink to this heading">#</a></h2>
+<section id="optimizacion-de-la-integracion-de-programacion-y-horarios-de-autobuses-utilizando-modelos-de-flujo-de-redes">
+<h2>Optimización de la Integración de Programación y Horarios de Autobuses Utilizando Modelos de Flujo de Redes<a class="headerlink" href="#optimizacion-de-la-integracion-de-programacion-y-horarios-de-autobuses-utilizando-modelos-de-flujo-de-redes" title="Permalink to this heading">#</a></h2>
+<p>Los sistemas de transporte público urbano son cruciales para reducir la congestión del tráfico, disminuir las emisiones de carbono y proporcionar opciones de movilidad eficientes en áreas metropolitanas. Sin embargo, la programación eficiente de los horarios y la asignación de autobuses sigue siendo un desafío complejo debido a restricciones como la cantidad de vehículos con que se cuenta, restricciones de los operadores de transporte  y la demanda variable de pasajeros.</p>
+<p>Este proyecto de investigación tiene como objetivo abordar el problema de la integración de la programación y los horarios de los autobuses utilizando modelos avanzados de flujo de redes. Al hacerlo, el proyecto busca mejorar la eficiencia operativa de los sistemas de transporte público, reducir costos y mejorar la calidad del servicio para los pasajeros.</p>
+<p><img alt="image.png" src="../_images/schedulling_route.png" /></p>
 </section>
-<section id="introduccion">
-<h2><strong>Introducción</strong><a class="headerlink" href="#introduccion" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Los Sistemas de Distribución de Energia Eléctrica (SDEE) se planifican como redes malladas interconectadas.</p></li>
-<li><p>Sin embargo, funcionan con una topología o configuración radial:</p>
-<ul>
-<li><p>Para facilitar la coordinación de las protecciones, y</p></li>
-<li><p>Para reducir la corriente de cortocircuito de las SDEE.</p></li>
-</ul>
-</li>
-<li><p>Para obtener una topología radial existen interruptores de interconexión (abiertos y/o cerrados) en puntos estratégicos del sistema.</p></li>
-<li><p>Así, la topología inicial puede modificarse accionando los interruptores para transferir las demandas entre los distintos alimentadores.</p></li>
-<li><p>La nueva topología tiene otro punto de operación y debe seguir siendo radial.</p></li>
-<li><p>El problema de reconfiguración del sistema de distribución (DSR) consiste en abrir y/o cerrar interruptores con el objetivo de mejorar un índice de rendimiento.</p></li>
-<li><p>La reconfiguración óptima es una herramienta importante para aumentar la fiabilidad de los SDEE:</p>
-<ul>
-<li><p>especialmente cuando la automatización avanzada y las tecnologías de redes inteligentes adquieren mayor importancia y se vuelven más accesibles para los servicios públicos de distribución.</p></li>
-</ul>
-</li>
-</ul>
-<p><img alt="" src="../_images/33-bus_system.png" /></p>
-</section>
-<section id="modelo-matematico-general">
-<h2><strong>Modelo matemático General</strong><a class="headerlink" href="#modelo-matematico-general" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>Variables de control (continuas y/o enteras)</strong>:</p>
-<ul>
-<li><p>estado de funcionamiento de los interruptores de interconexión (abierto o cerrado).</p></li>
-</ul>
-</li>
-<li><p><strong>Función objetivo:</strong></p>
-<ul>
-<li><p>minimizar las pérdidas de potencia activa;</p></li>
-<li><p>minimizar la desviación de la magnitud de tensión; o</p></li>
-<li><p>Aislar los fallos.</p></li>
-</ul>
-</li>
-<li><p>Matemáticamente, el problema RSD es un problema programación no lineal entero mixto (PNLEM).</p></li>
-<li><p>El tamaño del problema de reconfiguración está directamente asociado al número de <strong>interruptores de interconexión</strong> (IC) presentes en el sistema.</p></li>
-<li><p>Si un sistema tiene <span class="math notranslate nohighlight">\(C\)</span> conmutadores, el número de topologías posibles para el sistema es del orden de <span class="math notranslate nohighlight">\(2C\)</span>.</p></li>
-<li><p>La mayoría de estas topologías no son prácticas, porque no satisfacen la restricción de radialidad o tienen nodos desconectados.</p></li>
-</ul>
-<p><img alt="" src="../_images/mod_reconfi.png" /></p>
-<p>Arriba se encuentra un modelo de operación de las llaves de interconexión entre los nodos <span class="math notranslate nohighlight">\(i\)</span> y <span class="math notranslate nohighlight">\(j\)</span></p>
-<p>La variable entera <span class="math notranslate nohighlight">\(y_{ij}\)</span> representa el estado de operación de la llave de interconexión entre los nodos <span class="math notranslate nohighlight">\(i\)</span> y <span class="math notranslate nohighlight">\(j\)</span>.</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(y_{ij} = 1\)</span> si la llave de interconexión entre los nodos <span class="math notranslate nohighlight">\(i\)</span> y <span class="math notranslate nohighlight">\(j\)</span> está abierta</p></li>
-<li><p><span class="math notranslate nohighlight">\(y_{ij} = 0\)</span> si la llave de interconexión entre los nodos <span class="math notranslate nohighlight">\(i\)</span> y <span class="math notranslate nohighlight">\(j\)</span> está cerrada</p></li>
-<li><p>La variable continua <span class="math notranslate nohighlight">\(P_{ij}\)</span> representa el flujo de potencia activa entre los nodos <span class="math notranslate nohighlight">\(i\)</span> y <span class="math notranslate nohighlight">\(j\)</span>.</p></li>
-<li><p>La variable continua <span class="math notranslate nohighlight">\(Q_{ij}\)</span> representa el flujo de potencia reactiva entre los nodos <span class="math notranslate nohighlight">\(i\)</span> y <span class="math notranslate nohighlight">\(j\)</span>.</p></li>
-<li><p>La variable continua <span class="math notranslate nohighlight">\(P_{ij}\)</span> representa el flujo de corriente entre los nodos <span class="math notranslate nohighlight">\(i\)</span> y <span class="math notranslate nohighlight">\(j\)</span>.</p></li>
-<li><p>La variable continua <span class="math notranslate nohighlight">\(V_{i}\)</span> representa el voltaje en el nodo <span class="math notranslate nohighlight">\(i\)</span>.</p></li>
-<li><p>Los parametros <span class="math notranslate nohighlight">\(P_{i}^{D}\)</span> y <span class="math notranslate nohighlight">\(Q_{i}^{D}\)</span> representan la demanda de potencia activa y reactiva en el nodo <span class="math notranslate nohighlight">\(i\)</span>.</p></li>
-<li><p>Los parametros <span class="math notranslate nohighlight">\(R_{ij}\)</span> y <span class="math notranslate nohighlight">\(X_{ij}\)</span> representan la resistencia y reactancia de la linea entre los nodos <span class="math notranslate nohighlight">\(i\)</span> y <span class="math notranslate nohighlight">\(j\)</span>.</p></li>
-</ul>
-</section>
-<section id="modelo-matematico-inicial">
-<h2><strong>Modelo Matemático inicial</strong><a class="headerlink" href="#modelo-matematico-inicial" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>Objetivo:</strong> minimizar el costo de las pérdidas de potencia activa en el sistema.</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-Min \sum\limits_{ij \in {B}}\sum\limits_{t \in {T}} {{R_{ij}}I_{ij,t}^{sqr}};
-\]</div>
-<ul class="simple">
-<li><p><strong>Restricciones:</strong> equilibrio de potencia activa y reactiva, límite de magnitud de tensión, límite de corriente en los circuitos, funcionamiento radial del SDE.
-$<span class="math notranslate nohighlight">\(
-\sum\limits_{ki \in {B}} {{P_{ki,t}}}   - \sum\limits_{ij \in {B}} {\left( {{P_{ij,t}} + {R_{ij}}I_{ij,t}^{sqr}} \right)} + P_{i,t}^S = P_{i,t}^D;\forall i \in {N},  \forall t \in {T}
-\)</span>$</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-\sum\limits_{ki \in {B}} {{Q_{ki,t}}}   - \sum\limits_{ij \in {B}} {\left( {{Q_{ij,t}} + {X_{ij}}I_{ij,t}^{sqr}} \right)}  + Q_{i,t}^S= Q_{i,t}^D;\forall i \in {N},    \forall t \in {T}
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-{V_{i,t}^{sqr} = V_{j,t}^{sqr} + 2\left( {{R_{ij}}{P_{ij,t}} + {X_{ij}}{Q_{ij,t}}} \right)}- Z_{ij}^2{I_{ij,t}^{sqr}} + \Delta_{ij,t}^{V}; \forall ij \in {B},  \forall  t \in {T}
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-- {b^V}( {1 - {y_{ij,t}^B}}) \le \Delta _{ij,t}^V \le {b^V}( {1 -  {y_{ij,t}^B}});\forall ij \in B,\forall t \in T
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-V_{j,t}^{sqr} I_{ij,t}^{sqr} = P_{ij,t}^2 +  Q_{ij,t}^2;\forall ij \in {B},  \forall  t \in T
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-{ {\underline V }^2} \le V_{i,t}^{sqr} \le {\overline V }^2;\forall i \in N,\forall t \in T
-\]</div>
-<div class="math notranslate nohighlight">
-\[
-0 \le I_{ij,t}^{sqr} \le \overline I_{ij}^2 y_{ij,t}^B;\forall ij \in {B}, \forall t \in {T}
-\]</div>
-<ul class="simple">
-<li><p><strong>Variables:</strong> estado de funcionamiento de los interruptores de interconexión.</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-y_{ij,t}^B \in \left\{ {0,1} \right\};\forall ij \in {B}, \forall t \in {T}
-\]</div>
-</section>
-<section id="restriccion-de-radialidad">
-<h2><strong>Restricción de radialidad</strong><a class="headerlink" href="#restriccion-de-radialidad" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p>La representación de un SDEE se realiza mediante nodos y circuitos.</p></li>
-<li><p>Analizando la teoría de grafos, un SDEE puede considerarse como un grafo formado por , arcos y - nodos.</p></li>
-<li><p>Desde la teoría de grafos, un árbol es un grafo conexo sin ciclos, por lo que es posible comparar la topología radial de un SDEE con un árbol.</p></li>
-<li><p>Como se muestra en (M. S. Bazaraa, 1990), el árbol de un grafo es un subgrafo conexo con <span class="math notranslate nohighlight">\((m - 1)\)</span> arcos.</p></li>
-<li><p>Así, se puede decir que la topología de un SDEE con <span class="math notranslate nohighlight">\(N\)</span> nodos es radial si satisface las dos condiciones siguientes:</p>
-<ul>
-<li><p>Condición 1: la solución debe presentar <span class="math notranslate nohighlight">\((N - 1)\)</span> circuitos.</p></li>
-<li><p>Condición 2: la solución debe generar una topología conexa.</p></li>
-</ul>
-</li>
-<li><p>Obsérvese que las restricciones de radialidad deben estar formadas por la Condición 1 y la Condición 2.</p></li>
-<li><p><strong>Sólo la condición 1 no garantiza la radialidad del SDEE.</strong></p></li>
-</ul>
-<p>** Consecuencia en el problema de reconfiguración**</p>
-<ul class="simple">
-<li><p>El problema RSD cumple las siguientes características:</p></li>
-</ul>
+<section id="funciones-objetivo">
+<h2>Funciones Objetivo<a class="headerlink" href="#funciones-objetivo" title="Permalink to this heading">#</a></h2>
+<p>Algunas funciones objetivo que pueden considerarse de forma individual o integrada para el problema son:</p>
 <ol class="arabic simple">
-<li><p>En el SDEE sólo existe una única subestación (nodo subestación) ;</p></li>
-<li><p>Todos los demás nodos son nodos de carga;</p></li>
-<li><p>Debe cumplirse la primera ley de Kirchhoff, y</p></li>
-<li><p>el objetivo es encontrar la mejor topología radial.</p></li>
+<li><p>Minimizar los costos totales asociados con la operación de la flota de autobuses, incluidos los costos fijos, los costos variables y los costos de trayectos sin pasajeros.</p></li>
+<li><p>Maximizar el beneficio obtenido de realizar los viajes de servicio, considerando los costos operativos.</p></li>
+<li><p>Minimizar el número de autobuses necesarios para satisfacer la demanda del servicio.</p></li>
+<li><p>Maximizar la satisfacción del pasajero reduciendo los tiempos de espera y asegurando intervalos regulares de servicio.</p></li>
 </ol>
-<p><strong>La condición 1</strong> se cumple mediante la siguiente restricción:</p>
-<div class="math notranslate nohighlight">
-\[\sum_{ij \in B}{ y_{ij,t}^B} = |N| - 1\]</div>
-<ul class="simple">
-<li><p>Una solución que satisfaga la restricción de equilibrio de potencia (primera ley de Kirchhoff) tiene que proporcionar la potencia demandada en cada nodo de carga.</p></li>
-<li><p>Por tanto, existe un camino entre la subestación y los nodos de carga. Por lo tanto, cada nodo está conectado con la subestación, formando un grafo conectado, <strong>lo que demuestra la condición 2</strong>.</p></li>
-<li><p>Así, cuando las restricciones de equilibrio de potencia se combinan con la <strong>condición 1</strong>, cada nodo de carga está conectado por un único camino con la subestación, es decir, el SDEE está conectado, sin mallas.</p></li>
-</ul>
-<section id="generalizacion-de-la-restriccion-de-radialidad">
-<h3><strong>Generalización de la restricción de radialidad</strong><a class="headerlink" href="#generalizacion-de-la-restriccion-de-radialidad" title="Permalink to this heading">#</a></h3>
-<p><strong>Más de una subestación:</strong></p>
-<ul class="simple">
-<li><p>Este caso aparece con frecuencia en diversos problemas de optimización de SDEE.</p></li>
-<li><p>Por lo tanto, la condición 1 debe modificarse por:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\sum_{ij \in B}{ y_{ij,t}^B} = |N|- |N_{sub}|\]</div>
-<p>En el que <span class="math notranslate nohighlight">\(|N_{sub}|\)</span> es el numero total de subestaciones en el SDEE.</p>
-<p>La restricción anterior más las restricciones de equilibrio de potencia garantizan que deben construirse circuitos <span class="math notranslate nohighlight">\(|N|- |N_{sub}|\)</span> para alimentar los nodos de carga <span class="math notranslate nohighlight">\(|N|- |N_{sub}|\)</span> y que deben construirse <span class="math notranslate nohighlight">\(|N_{sub}|\)</span> topologias radiales en la solución final.</p>
-<p><strong>Nodos de transferencia:</strong></p>
-<ul class="simple">
-<li><p>Un nodo de transferencia es simplemente un nodo sin generación ni demanda.</p></li>
-<li><p>Los nodos de transferencia no son tan frecuentes en un SDEE, se utilizan para conectar un nodo de carga con otros nodos de carga.</p></li>
-<li><p>Un nodo de transferencia no es un nodo terminal (ésta es la condición principal sobre el uso de nodos de transferencia); por lo tanto, hay al menos dos circuitos más que “salen” del nodo de transferencia.</p></li>
-<li><p>Por otro lado, si se sabe que todos los nodos de transferencia forman parte de la topología radial SDEE, un método sencillo consiste en suponer un valor de carga pequeño (por ejemplo, 0,001 kW) en todos los nodos de transferencia para garantizar que todos los nodos están conectados.</p></li>
-</ul>
 </section>
+<section id="posibles-restricciones">
+<h2>Posibles Restricciones<a class="headerlink" href="#posibles-restricciones" title="Permalink to this heading">#</a></h2>
+<p>Para desarrollar un modelo realista y efectivo, se pueden considerar las siguientes restricciones:</p>
+<ol class="arabic simple">
+<li><p>Cada viaje de servicio puede ser realizado por como máximo un autobús.</p></li>
+<li><p>Mantener intervalos mínimos y máximos entre viajes consecutivos.</p></li>
+<li><p>Los autobuses deben comenzar y terminar sus rutas en el mismo depósito.</p></li>
+<li><p>Asegurar que los autobuses cumplan con los horarios de salida y llegada dentro del horizonte de planificación.</p></li>
+<li><p>Incluir trayectos sin pasajeros y los tiempos de espera necesarios en los puntos terminales.</p></li>
+<li><p>Mantener una frecuencia mínima de viajes de servicio para cada línea de autobús para asegurar la calidad del servicio.</p></li>
+</ol>
+</section>
+<section id="resultados-esperados">
+<h2>Resultados Esperados<a class="headerlink" href="#resultados-esperados" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Desarrollar horarios de autobuses eficientes que minimicen los costos operativos y maximicen la calidad del servicio.</p></li>
+<li><p>Demostrar una reducción en el tamaño de la flota y los costos operativos manteniendo o mejorando los niveles de servicio.</p></li>
+<li><p>Proporcionar horarios que reduzcan los tiempos de espera y aseguren un servicio confiable y regular para los pasajeros.</p></li>
+</ol>
+</section>
+<section id="bibliografia-minima-sugerida">
+<h2>Bibliografía mínima sugerida<a class="headerlink" href="#bibliografia-minima-sugerida" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0191261518301115">A new formulation and a column generation-based heuristic for the multiple depot vehicle scheduling problem</a></p>
+<p><a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0968090X24001773">Heuristic solutions to the single depot electric vehicle scheduling problem with next day operability constraint</a></p>
+<p><a class="reference external" href="https://www.mdpi.com/1996-1073/16/13/5073">Optimizing the Scheduling of Electrified Public Transport System in Malta</a></p>
+<p><a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0968090X24000913">A mixed-integer programming-based Q-learning approach for electric bus scheduling with multiple termini and service routes</a></p>
 </section>
 </section>
 
@@ -655,14 +510,11 @@ y_{ij,t}^B \in \left\{ {0,1} \right\};\forall ij \in {B}, \forall t \in {T}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resolver-el-problema-de-reconfiguracion-de-redes-de-distribucion-de-energia-electrica-rsd"><strong>Resolver el problema de reconfiguración de redes de distribución de energia eléctrica (RSD)</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduccion"><strong>Introducción</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-matematico-general"><strong>Modelo matemático General</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelo-matematico-inicial"><strong>Modelo Matemático inicial</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restriccion-de-radialidad"><strong>Restricción de radialidad</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#generalizacion-de-la-restriccion-de-radialidad"><strong>Generalización de la restricción de radialidad</strong></a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optimizacion-de-la-integracion-de-programacion-y-horarios-de-autobuses-utilizando-modelos-de-flujo-de-redes">Optimización de la Integración de Programación y Horarios de Autobuses Utilizando Modelos de Flujo de Redes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones-objetivo">Funciones Objetivo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posibles-restricciones">Posibles Restricciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resultados-esperados">Resultados Esperados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliografia-minima-sugerida">Bibliografía mínima sugerida</a></li>
 </ul>
   </nav></div>
 

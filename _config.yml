@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Flujo en Redes 202302
+title: Network Flow 
 author: Alejandra Tabares
 
 
@@ -20,8 +20,8 @@ latex:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/tabarespozos/Flujo_en_redes_202302  # Online location of your book
-  branch: Flujo_en_redes_202302  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/tabarespozos/Network_Flow  # Online location of your book
+  branch: Network_Flow  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository

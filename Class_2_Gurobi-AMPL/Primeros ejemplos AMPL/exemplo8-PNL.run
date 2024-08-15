@@ -1,0 +1,82 @@
+reset;
+
+param a1;
+param a2;
+param a3;
+param a4;
+param a5;
+param a6;
+param a7;
+param a8;
+param a9;
+param a10;
+param a11;
+param a12;
+
+var x1;
+var x2;
+var x3;
+var x4;
+var x5;
+
+
+model;
+
+minimize FO : 5.35*x3^2 + 0.83*x1*x5 + 37.29*x1 - 40792.141;
+
+subject to R1:
+  0 <= a1 + a2*x2*x5 + a3*x1*x4 - a4*x3*x5 <= 92;
+
+subject to R2:
+  0 <= a5 + a6*x2*x5 + a7*x1*x2 + a8*x3^2 - 90 <= 20;
+
+subject to R3:
+  0 <= a9 + a10*x3*x5 + a11*x1*x3 + a12*x3*x4 - 20 <= 5;
+
+subject to R4:
+  78 <= x1 <= 102;
+
+subject to R5:
+  33 <= x2 <= 45;
+
+subject to R6:
+  27 <= x3 <= 45;
+
+subject to R7:
+  27 <= x4 <= 45;
+
+subject to R8:
+  27 <= x5 <= 45;
+  
+data;
+
+param a1 := 85.334407;
+param a5 := 80.51249;
+param a9 := 9.300961;
+param a2 := 0.0056858;
+param a6 := 0.0071317;
+param a10 := 0.0047026;
+param a3 := 0.0006262;
+param a7 := 0.0029955;
+param a11 := 0.0012547;
+param a4 := 0.0022053;
+param a8 := 0.0021813;
+param a12 := 0.0019085;
+
+option solver knitro;
+
+# definição de um ponto inicial para o processo iterativo de solução
+let x1 :=-100;
+let x2 :=-100;
+let x3 :=-100;
+let x4 :=-100;
+let x5 :=-100;
+
+solve FO;
+
+display FO;
+display x1;
+display x2;
+display x3;
+display x4;
+display x5;
